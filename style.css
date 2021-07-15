@@ -1,0 +1,362 @@
+body{
+    margin-top: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color:  white;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/* <!--==================================
+        NAVIGATION SECTION
+=================================== --> */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(60deg,#2A1A5E, #5233B8, #A18AEE);
+}
+
+.menu{
+    display: flex;
+    margin-left: 100px;
+}
+
+.menu a{
+    margin-left: 30px;
+}
+
+nav a{
+    
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav span a button{
+    margin-right: 140px;
+}
+
+
+
+/* <!--==================================
+        HEAD SECTION
+=================================== --> */
+
+.head-section{
+    height: 677px;
+    /* background-color: #2A1A5E; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(60deg,#2A1A5E, #5233B8, #A18AEE);
+    box-shadow: 5px 5px 30px rgba(42, 26, 94, 0.795);
+    
+}
+
+.head-section.left{
+    width: 40%;
+}
+
+.left h1{
+    font-size: 64px;
+    color: whitesmoke;
+    padding-left: 140px;
+}
+
+.left a{
+    text-decoration: none;
+    margin-left: 140px;
+
+    
+}
+
+button{
+    background-color: transparent;
+    width: 200px;
+    height: 66px;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+
+.fa-sign-in-alt{
+    color: whitesmoke;
+}
+
+.head-section .left a button:hover, nav span a button:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: whitesmoke;
+    background: #FF0099;
+    box-shadow: 0px 0px 10px #FF0099, 0px 0px 40px #FF0099, 0px 0px 80px #FF0099;
+}
+
+.head-section:hover img{
+    transform: rotate(10deg);
+    
+}
+
+.head-section .right{
+    width: 60%;
+}
+
+.right img{
+    width: 80%;
+    padding-right: 120px;
+    transition: transform 0.5s;
+}
+
+
+
+
+/* <!--==================================
+        PLAYER SECTION
+=================================== --> */
+
+.players{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    padding: 0px 120px;
+    margin-bottom: 50px;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 30px  rgba(170, 170, 162, 0.5);
+}
+
+.player img{
+    height: 256px;
+    width: 300px;
+}
+
+
+
+/* <!--==================================
+        HIGHLITE SECTION
+=================================== --> */
+
+.blocks{
+    margin-top: 110px;
+}
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.block .picture img{
+    width: 100%;
+    height: 333px;
+}
+
+.block a button{
+    cursor: pointer;
+    background-image: linear-gradient(30deg, #FF0099, #CC00FF);
+}
+
+
+/* <!--==================================
+        SUBSCRIBE SECTION
+=================================== --> */
+
+.premium{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300px;
+    color: white;
+    background-color:#2A1A5E ;
+    padding-bottom: 20px;
+}
+
+.premium h2{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.premium h3{
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.premium button{
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 2px solid #CC00FF ;
+    font-weight: 200px;
+}
+
+
+/* <!--==================================
+            FOOTER
+=================================== --> */
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 236px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    width: 100%;
+    background-color: white;
+}
+
+.social-media{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+
+/* <!--==================================
+        MOBILE RESPONSIVE
+=================================== --> */
+/* <!--==================================
+        MOBILE RESPONSIVE
+=================================== --> */
+
+@media only screen and (max-width: 688px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+/* <!--==================================
+            HEADER
+=================================== --> */
+
+    header{
+        display: none;
+    }
+
+    .head-section{
+        /* padding-right: 20; */
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        height: 750px;
+    }
+
+    .head-section .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: -80px;
+    }
+
+    .head-section .right img{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+
+/* <!--==================================
+            PLAYER SECTION
+=================================== --> */
+
+    .container .players{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .players .player{
+        display: flex;
+        width: 330px;
+        height: 400px;
+        margin-top: 24px;
+    }
+
+    .players .player img{
+        width: 100%;
+    }
+
+    .players .player .player-details{
+        text-align: center;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+/* <!--==================================
+        HIGHLIGHT SECTION
+=================================== --> */
+
+    .highlight{
+        margin-top: -80px;
+    }
+
+    .highlight .blocks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight .blocks .block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block img{
+        width: 100%;
+    }
+
+/* <!--==================================
+        SUBSCRIBE SECTION
+=================================== --> */
+    
+    .subscribe .premium{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+/* <!--==================================
+            FOOTER
+=================================== --> */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
